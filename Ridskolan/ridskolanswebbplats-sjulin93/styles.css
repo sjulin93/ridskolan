@@ -1,0 +1,198 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.wrapper{
+    width:100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+/*navigations menu*/
+
+nav{
+    background-color: #36485e;
+    padding:0;
+}
+nav ul{
+    list-style-type:none;
+
+}
+nav a{
+    text-decoration: none;
+    color:white;
+    display:block;
+    padding: 0.5rem;
+    text-align: center;
+    
+}
+nav a:hover{
+    background-color: #555;
+}
+.main-menu{
+    padding-right:2%;
+}
+
+/*loggan*/
+.logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:white;
+    font-family: 'Ubuntu', sans-serif;
+
+
+}
+.logo{
+    text-align: center;
+    padding: 2%;
+    margin-left:2%;
+}
+
+/*flexboxes navigation*/
+nav li:hover .dropdown li{
+    top:0;
+    display:block;
+}
+.dropdown li{
+    display:none;
+    position: relative;
+}
+
+
+
+/*nyhetskortet på index.html*/
+
+.main-container{
+    background-image: url(background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    padding: 5% 15% 0 15%;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10%;
+    
+}
+.news-card{
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 4% 4% 3% 4%;
+    margin-left: 15%;
+    margin-right: 40%;
+    margin-top: 9%;
+    position:relative;
+    right:20%;
+    
+}
+.news-headline{
+
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    color:#29252c;
+    padding-bottom: 5%;
+}
+.news-card h3{
+    padding-bottom: 2%;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+}
+
+/*mitten sectionen*/
+
+.middle-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 3% 5% 3% 5%;
+    background-color: #f7f3f3;
+    
+}
+.cards{
+    display:flex;
+    flex-direction: column;
+    padding-left: 3%;
+    padding-right: 3%;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-left: 3%;
+    margin-right:3%;
+}
+.cards h2{
+    padding-bottom: 4%;
+}
+.cards p{
+    margin:auto 5% auto 5%;
+}
+
+
+/*footer*/
+.media{
+    width: 2rem;
+}
+.bottom-container{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding:2% 0 2% 0;
+
+}
+.kontakt ul li{
+    display:inline-block;
+    
+}
+
+/*media queries*/
+@media screen and (max-width: 720px){
+    .middle-container{
+        display:flex;
+        flex-direction: column;
+        width: 100%;
+        align-content: center;
+        padding-bottom: 3%;
+    }
+    .cards{
+        display:flex;
+        flex-direction: column;
+        padding-top:5%;
+
+        margin-top:8%;
+
+    }
+    .news-card{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+      
+        
+    }
+}
+@media screen and (min-width: 768px){
+ 
+    
+
+    nav{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav ul{
+        display:flex;
+    }
+    .dropdown{
+        position:absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: #36485e;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .dropdown ul li:hover{
+        display:block;
+    }
+    
+    
+}
